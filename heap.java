@@ -100,4 +100,92 @@ public class heap {
 
  */
 //minimum cost of ropes
+/*
+public class heap{
+    public static  int MinCost(int[]arr){
+        //min heap
+        PriorityQueue<Integer> pq=new PriorityQueue<>();
 
+        int cost=0;
+        for(int ele:arr){
+        pq.add(ele);
+    }
+    while(pq.size()>1){
+        int first=pq.remove();
+        int second=pq.remove();
+         int Add=first+second;
+         cost+=Add;
+        pq.add(Add);
+
+    }
+return cost;
+    }
+    public static void main(String[] args) {
+int[]arr={4,2,7,6,9};
+System.out.println(MinCost(arr));
+    }
+}
+
+ */
+// k frequent elements
+/*
+
+public class heap {
+
+    static class Pair implements Comparable<Pair> {
+        int ele;
+        int freq;
+
+        Pair(int ele, int freq) {
+            this.ele = ele;
+            this.freq = freq;
+        }
+
+        @Override
+        public int compareTo(Pair p) {
+            if (this.freq == p.freq)
+                return this.ele - p.ele;
+
+            return this.freq - p.freq;
+        }
+    }
+
+    public static ArrayList<Integer> topFrequent(int[] arr, int k) {
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for (int ele : arr) {
+            map.put(ele, map.getOrDefault(ele, 0) + 1);
+        }
+
+        PriorityQueue<Pair> pq = new PriorityQueue<>();
+
+        for (int ele : map.keySet()) {
+            int freq = map.get(ele);
+
+            pq.add(new Pair(ele, freq));
+
+            if (pq.size() > k) {
+                pq.remove();
+            }
+        }
+
+        ArrayList<Integer> ans = new ArrayList<>();
+
+        while (!pq.isEmpty()) {
+            ans.add(pq.remove().ele);
+        }
+
+        return ans;
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = {1,1,1,2,2,3};
+        int k = 2;
+
+        System.out.println(topFrequent(arr, k));
+    }
+}
+
+ */
