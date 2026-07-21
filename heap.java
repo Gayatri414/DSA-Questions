@@ -189,3 +189,4 @@ public class heap {
 }
 
  */
+//is binary tree is heap
