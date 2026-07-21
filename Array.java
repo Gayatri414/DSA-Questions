@@ -1,3 +1,6 @@
+import java.sql.SQLOutput;
+import java.util.HashMap;
+
 //7,9,10
 //largest element in an array.
 /*
@@ -122,4 +125,64 @@ public class Array {
     }
 }
 
+ */
+//two sum
+/*
+public class Array {
+    public static int[] TwoSum(int arr[],int k){
+        HashMap<Integer,Integer> map=new HashMap<>();
+        for(int i=0;i<arr.length;i++ ){
+            int diff=k-arr[i];
+            if(map.containsKey(diff)){
+                return new int[]{map.get(diff)};
+            }
+
+                map.put(arr[i],i);
+
+        }
+        return new int[]{};
+    }
+    public static void main(String[] args) {
+        int arr[]={1,2,3,4,5};
+        int target=3;
+        TwoSum(arr,target);
+    }
+}
+
+ */
+/*
+public class Array {
+    public static int Largest(int[]arr){
+        int max=arr[0];
+        for(int num:arr){
+            max=Math.max(max,num);
+        }
+        return max;
+    }
+    public static void main(String[] args) {
+        int []arr={1,2,3,4,5};
+        System.out.println((Largest(arr)));
+    }
+}
+
+ */
+//remove duplicates from array
+/*
+public class Array {
+    public static int remove(int arr[]){
+        int n=arr.length;
+        int i=0;
+        for(int j=1;j<n;j++){
+            if(arr[i]!=arr[j]){
+                i++;
+                arr[i]=arr[j];
+            }
+        }
+        return i+1;
+    }
+    public static void main(String[] args) {
+        int arr[]={1,1,1,3,3,4,5,5};
+        System.out.println(remove(arr));
+    }
+}
  */
