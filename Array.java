@@ -261,4 +261,20 @@ public class Array {
         System.out.println(threeSum(arr, target));
     }
 }
- 
+ //rotate the given arrya'a' by k steps where k is non negative note:k can be greater than n as well
+//two loops-- n-k to n second loop--0 to n-k
+
+static int[]rotate(int[]arr,int k){
+    int n=arr.length;
+    k=k%n;
+    int[]ans=new  int[n];
+int j=0;
+for(int i=n-k;i<n;i++){
+    ans[j++]=arr[i];
+
+}
+for(int i=0;i<n-1;i++){
+    ans[j++]=arr[i];
+}
+return ans;
+}
