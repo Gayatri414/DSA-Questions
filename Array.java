@@ -3,7 +3,7 @@ import java.util.HashMap;
 
 //7,9,10
 //largest element in an array.
-/*
+
 public class Array {
     public static  int Largest(int[]arr){
         int largest=Integer.MIN_VALUE;
@@ -20,9 +20,9 @@ public class Array {
         Largest(arr);
     }
 }
- */
+ 
 //second largest element.
-/*
+
 public class Array {
     public static int SecondLargest(int[]arr){
         int largest=Integer.MIN_VALUE;
@@ -45,9 +45,9 @@ int arr[]={1,2,3,4,5,6,7};
 SecondLargest(arr);
     }
 }
- */
+ 
 //reverse an array
-/*
+
 public class Array {
     public static void reverse(int[]arr){
         int n= arr.length;
@@ -73,9 +73,9 @@ public class Array {
     }
 }
 
- */
+ 
 //6.Move all zeros to end.
-/*
+
 public class Array {
     public static void zero(int[]arr){
         int start=0;
@@ -105,9 +105,9 @@ public class Array {
     }
 }
 
- */
+ 
 //8.Two Sum Problem.
-/*
+
 public class Array {
     public static void TwoSum(int[]arr,int target){
         for(int i=0;i<arr.length-1;i++){
@@ -125,9 +125,8 @@ public class Array {
     }
 }
 
- */
 //two sum
-/*
+
 public class Array {
     public static int[] TwoSum(int arr[],int k){
         HashMap<Integer,Integer> map=new HashMap<>();
@@ -149,8 +148,8 @@ public class Array {
     }
 }
 
- */
-/*
+
+
 public class Array {
     public static int Largest(int[]arr){
         int max=arr[0];
@@ -165,9 +164,9 @@ public class Array {
     }
 }
 
- */
+
 //remove duplicates from array
-/*
+
 public class Array {
     public static int remove(int arr[]){
         int n=arr.length;
@@ -185,7 +184,7 @@ public class Array {
         System.out.println(remove(arr));
     }
 }
- */
+
 //move zeros
 /*
 public class Array {
@@ -205,7 +204,7 @@ public class Array {
 
     }
 }
- */
+
 //left rotate by one
 /*
 public class Array{
@@ -222,10 +221,10 @@ public class Array{
     }
 }
 
- */
+ 
 //3 sum
 import java.util.Arrays;
-/*
+
 public class Array {
 
     public static boolean threeSum(int[] arr, int target) {
@@ -262,4 +261,4 @@ public class Array {
         System.out.println(threeSum(arr, target));
     }
 }
- */
+ 
