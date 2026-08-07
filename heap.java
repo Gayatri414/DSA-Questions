@@ -1,8 +1,35 @@
 import java.util.*;
+// Most frequent
+// Least frequent
+// Top K frequent
+// Closest
+// Nearest
+// Smallest distance
+// K nearest
+// Merge K sorted arrays
+// Merge K sorted lists
+// Smallest among many sorted lists
+// K smallest
+// Top K
+// Kth largest
+// Kth smallest
 //max=smallest ,closest,sorting
 //min heap=largest
-//min heap= PriorityQueue<Integer> pq=new PriorityQueue<>();
-//max heap= PriorityQueue<Integer> pq=new PriorityQueue<>(Collections.reverseOrder());
+| Problem Type               | Heap              |
+| -------------------------- | ----------------- |
+| K Largest                  | Min Heap          |
+| K Smallest                 | Max Heap          |
+| Minimum element repeatedly | Min Heap          |
+| Maximum element repeatedly | Max Heap          |
+| Merge K Sorted Lists       | Min Heap          |
+| Top K Frequent             | Min Heap (size K) |
+| Closest Points             | Max Heap (size K) |
+| Dijkstra                   | Min Heap          |
+| Prim                       | Min Heap          |
+| Huffman Coding             | Min Heap          |
+
+min heap= PriorityQueue<Integer> pq=new PriorityQueue<>();
+max heap= PriorityQueue<Integer> pq=new PriorityQueue<>(Collections.reverseOrder());
 
 //Kth smallest num
 
