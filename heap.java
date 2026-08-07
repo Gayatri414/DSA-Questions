@@ -5,7 +5,7 @@ import java.util.*;
 //max heap= PriorityQueue<Integer> pq=new PriorityQueue<>(Collections.reverseOrder());
 
 //Kth smallest num
-/*
+
 public class heap {
     public static int KthSmallest(int[] arr,int k){
         //maxheap
@@ -24,10 +24,10 @@ public class heap {
     }
     }
 
- */
+ 
 
 //Kth largest num
-/*
+
 
 public class heap {
     public static int KthLargest(int[] arr,int k){
@@ -47,9 +47,9 @@ public class heap {
     }
     }
 
- */
+ 
 //sorted array -sort a k sorted array-time complexity=nlogk
-/*
+
 public class heap{
     public static void nearlySorted(int[]arr,int k){
         PriorityQueue<Integer> pq=new PriorityQueue<>();
@@ -76,10 +76,10 @@ public class heap{
         System.out.println(Arrays.toString(arr));
     }
 }
- */
+
 
 //minimal cost
-/*
+
 public class heap {
     public static int minimizeCost(int k,int arr[]){
         PriorityQueue<Integer> pq=new PriorityQueue<>(Collections.reverseOrder());
@@ -98,9 +98,9 @@ public class heap {
     }
 }
 
- */
+
 //minimum cost of ropes
-/*
+
 public class heap{
     public static  int MinCost(int[]arr){
         //min heap
@@ -126,9 +126,8 @@ System.out.println(MinCost(arr));
     }
 }
 
- */
 // k frequent elements
-/*
+
 
 public class heap {
 
@@ -188,5 +187,5 @@ public class heap {
     }
 }
 
- */
+
 //is binary tree is heap
