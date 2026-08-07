@@ -1,6 +1,6 @@
 
 import java.util.*;
-//two sum
+// 1.two sum
 
 class Main {
     public static int[] TwoSum(int[]arr,int target){
@@ -23,7 +23,7 @@ class Main {
     }
 }
 
-//Best time to sell and buy
+//2.Best time to sell and buy
 
 class Main{
     public static int Profit(int[]arr){
@@ -42,7 +42,7 @@ class Main{
         
     }
 }
-//Maximum subarray
+//3.Maximum subarray
 class Main{
     public static int maxSubarray(int[]arr){
         int sum=0;
@@ -59,6 +59,37 @@ class Main{
     public static void main(String[]args){
         int[]arr={1,-1,2,3,-6,4};
         System.out.println(maxSubarray(arr));
+    }
+}
+//4. Product except itself
+class Main {
+
+    public static void ProductExceptItself(int[] arr) {
+        int n = arr.length;
+
+        int[] prefix = new int[n];
+        int[] suffix = new int[n];
+        prefix[0] = 1;
+        for (int i = 1; i < n; i++) {
+            prefix[i] = prefix[i - 1] * arr[i - 1];
+        }
+
+        suffix[n - 1] = 1;
+        for (int i = n - 2; i >= 0; i--) {
+            suffix[i] = suffix[i + 1] * arr[i + 1];
+        }
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = prefix[i] * suffix[i];
+        }
+
+        System.out.println(Arrays.toString(arr));
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4};
+
+        ProductExceptItself(arr);
     }
 }
 
