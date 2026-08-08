@@ -261,7 +261,7 @@ public class KClosestPointsToOrigin {
             Triplet top = pq.remove();
 
             ans[i][0] = top.x;
-            ans[i][1] = top.y;   // You had top.x here
+            ans[i][1] = top.y;   
         }
 
         return ans;
