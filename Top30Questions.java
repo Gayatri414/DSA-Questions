@@ -132,3 +132,29 @@ int target = 0;
 System.out.println(search(nums,target));
     }
 }
+//minimum cost of ropes
+
+public class heap{
+    public static  int MinCost(int[]arr){
+        //min heap
+        PriorityQueue<Integer> pq=new PriorityQueue<>();
+
+        int cost=0;
+        for(int ele:arr){
+        pq.add(ele);
+    }
+    while(pq.size()>1){
+        int first=pq.remove();
+        int second=pq.remove();
+         int Add=first+second;
+         cost+=Add;
+        pq.add(Add);
+
+    }
+return cost;
+    }
+    public static void main(String[] args) {
+int[]arr={4,2,7,6,9};
+System.out.println(MinCost(arr));
+    }
+}
