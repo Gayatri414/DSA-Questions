@@ -278,3 +278,21 @@ for(int i=0;i<n-1;i++){
 }
 return ans;
 }
+//leaders in array
+public static ArrayList<Integer> leaders(int[] arr) {
+    int n = arr.length;
+
+    ArrayList<Integer> arr1 = new ArrayList<>();
+
+    int max = arr[n - 1];
+    arr1.add(max);
+
+    for (int i = n - 2; i >= 0; i--) {
+        if (arr[i] > max) {
+            arr1.add(arr[i]);
+            max = arr[i];
+        }
+    }
+
+    return arr1;
+}
