@@ -158,3 +158,28 @@ int[]arr={4,2,7,6,9};
 System.out.println(MinCost(arr));
     }
 }
+//KokO eating banans
+class Solution {
+    public int minEatingSpeed(int[] piles, int h) {
+        int low=1;
+        int high=0;
+        for(int pile:piles){
+            high =Math.max(high,pile);
+        }
+        int answer=high;
+    while(low<=high){
+        int mid=low+(high-low)/2;
+        int hours=0;
+        for(int pile:piles){
+            hours+=(pile+mid-1)/mid;
+        }
+        if(hours<=h){
+            answer=mid;// try smaller speed
+            high=mid-1;;
+        }else{
+            low=mid+1;  // need faster speed
+        }
+    }
+    return answer;
+    }
+}
