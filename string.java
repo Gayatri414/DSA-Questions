@@ -150,3 +150,26 @@ anagram("hayatri","irtayah");
  */
 //6.Longest substring without repeating characters.
 //7.String compression
+//8.Maximum Nesting Depth of the Parentheses, 
+class Solution {
+    public int maxDepth(String s) {
+
+        int depth = 0;
+        int maxdepth = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+
+            char ch = s.charAt(i);
+
+            if (ch == '(') {
+                depth++;
+                maxdepth = Math.max(maxdepth, depth);
+            } 
+            else if (ch == ')') {
+                depth--;
+            }
+        }
+
+        return maxdepth;
+    }
+}
