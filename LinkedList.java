@@ -132,3 +132,51 @@ public class LinkedList {
 
  */
 //merge two sorted linked list
+//sort by 0's,1's,2's
+public ListNode sortList(ListNode head) {
+
+    int count0 = 0;
+    int count1 = 0;
+    int count2 = 0;
+
+    ListNode temp = head;
+
+    // Count 0s, 1s and 2s
+    while (temp != null) {
+        if (temp.val == 0) {
+            count0++;
+        } 
+        else if (temp.val == 1) {
+            count1++;
+        } 
+        else {
+            count2++;
+        }
+
+        temp = temp.next;
+    }
+
+    // Put 0s
+    temp = head;
+    while (count0 > 0) {
+        temp.val = 0;
+        temp = temp.next;
+        count0--;
+    }
+
+    // Put 1s
+    while (count1 > 0) {
+        temp.val = 1;
+        temp = temp.next;
+        count1--;
+    }
+
+    // Put 2s
+    while (count2 > 0) {
+        temp.val = 2;
+        temp = temp.next;
+        count2--;
+    }
+
+    return head;
+}
